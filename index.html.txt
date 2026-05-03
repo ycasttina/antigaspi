@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>ANTIGASPI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>ANTIGASPI</h1>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="intention.html">L’intention</a>
+    <a href="echange.html">Échange!</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="IMG_2949.jpeg" alt="ANTIGASPI image">
+</section>
+
+<section class="content">
+  <div class="box small">
+    <h2>Le problème</h2>
+  </div>
+
+  <div class="box large">
+    <p>
+      À cause du gaspillage alimentaire et de la surconsommation, 
+      il y a beaucoup de gaspillage de ressources naturelles.
+    </p>
+  </div>
+</section>
+
+</body>
+</html>
