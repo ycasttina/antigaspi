@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Échange - ANTIGASPI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>ANTIGASPI</h1>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="intention.html">L’intention</a>
+    <a href="echange.html">Échange!</a>
+  </nav>
+</header>
+
+<section class="search-section">
+  <div class="search-box">
+    🔍 <input type="text" placeholder="Trouvez l'objet souhaité">
+  </div>
+</section>
+
+<section class="comments-section">
+  <h2>➕ Que voulez-vous échanger ?</h2>
+  <textarea placeholder="Écrivez ici..."></textarea>
+  <button onclick="addComment()">Ajouter</button>
+
+  <div id="comments"></div>
+</section>
+
+<script>
+function addComment() {
+  const textarea = document.querySelector("textarea");
+  const commentsDiv = document.getElementById("comments");
+
+  if (textarea.value.trim() !== "") {
+    const newComment = document.createElement("p");
+    newComment.textContent = textarea.value;
+    commentsDiv.appendChild(newComment);
+    textarea.value = "";
+  }
+}
+</script>
+
+</body>
+</html>
